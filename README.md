@@ -1,8 +1,4 @@
-Sure! Here's the **entire README text** in a single plain text block — no Markdown formatting, just clean text that you can directly copy and paste anywhere:
-
----
-
-🩸 **Blood Bank Management System**
+🩸 Blood Bank Management System
 
 A comprehensive Blood Bank Management System developed using Python and MySQL to streamline blood donor registration, inventory management, and blood request handling for hospitals and blood banks.
 
