@@ -1,71 +1,104 @@
-🩸 Blood Bank Management System
+# 🩸 Blood Bank Management System
 
-A comprehensive Blood Bank Management System developed using Python and MySQL to streamline blood donor registration, inventory management, and blood request handling for hospitals and blood banks.
+A comprehensive Blood Bank Management System developed using the **MERN stack** to streamline blood donor registration, inventory management, and blood request handling for hospitals and blood banks.
 
-**Features:**
+## 🏆 Achievement
+
+This project **won Webathon 3.0**, hosted by the **ACM Student Chapter of VNR VJIET**, for its impactful implementation, intuitive interface, and real-world applicability.
+
+## **Features**
 
 * Donor Registration and Management
 * Recipient Blood Request Handling
 * Blood Inventory Tracking (type and quantity)
 * Hospital Integration
-* Secure Admin and User Login System
+* Secure Admin and User Authentication
 * Real-time Admin Dashboard
 * Smart Blood Match Recommendations
 
-**Tech Stack:**
+## **Tech Stack**
 
-* Backend: Python (Tkinter GUI)
-* Database: MySQL
-* IDE: PyCharm / VS Code
+* **Backend:** Node.js, Express.js
+* **Frontend:** React.js
+* **Database:** MongoDB
+* **Tools:** VS Code, Postman
 
-**Project Structure:**
-Blood\_Bank\_Management\_system/
-├── bloodbank.sql                -> Database schema and initial data
-├── donor.py                     -> Donor registration and operations
-├── recipient.py                 -> Recipient blood request interface
-├── admin.py                     -> Admin dashboard and management
-├── login.py                     -> Login authentication logic
-├── dbconfig.py                  -> MySQL DB connection setup
-└── README.md                    -> Project documentation
+## **Project Structure**
 
-**How to Use:**
+```
+Blood_Bank_Management_system/
+├── backend/
+│   ├── config/             -> DB connection and environment configs
+│   ├── controllers/        -> API logic for donors, recipients, admin, auth
+│   ├── models/             -> Mongoose schemas for collections
+│   ├── routes/             -> Express routes for API endpoints
+│   ├── middleware/         -> Auth and error handling middleware
+│   └── server.js           -> Entry point for backend server
+├── frontend/
+│   ├── public/             -> Public assets
+│   ├── src/
+│   │   ├── components/     -> React UI components
+│   │   ├── pages/          -> React pages (Dashboard, Login, etc.)
+│   │   ├── services/       -> API calls
+│   │   └── App.js          -> Main React app component
+│   └── package.json
+├── .gitignore
+├── README.md
+└── package.json            -> Root package.json if monorepo setup
+```
 
-1. Clone the repository:
-   git clone [https://github.com/palkiranreddyG/Blood\_Bank\_Management\_system.git](https://github.com/palkiranreddyG/Blood_Bank_Management_system.git)
-   cd Blood\_Bank\_Management\_system
+## **How to Use**
 
-2. Set up the MySQL Database:
+1. **Clone the repository:**
 
-   * Open MySQL Workbench or any client.
-   * Run `bloodbank.sql` to create the database and required tables.
+   ```bash
+   git clone https://github.com/palkiranreddyG/Blood_Bank_Management_system.git
+   cd Blood_Bank_Management_system
+   ```
 
-3. Configure database connection:
+2. **Setup Backend:**
 
-   * Open `dbconfig.py` and edit with your MySQL credentials:
-     host = "localhost"
-     user = "your\_mysql\_username"
-     password = "your\_mysql\_password"
-     database = "bloodbank"
+   ```bash
+   cd backend
+   npm install
+   ```
 
-4. Run the application:
-   python login.py
+   * Configure MongoDB connection string in `.env` file:
 
-**Future Enhancements:**
+     ```
+     MONGO_URI=your_mongodb_connection_string
+     JWT_SECRET=your_jwt_secret_key
+     PORT=5000
+     ```
+
+   * Start the backend server:
+
+     ```bash
+     npm run dev
+     ```
+
+3. **Setup Frontend:**
+
+   Open a new terminal:
+
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
+
+4. **Access the app:**
+
+   Visit `http://localhost:3000` in your browser.
+
+## **Future Enhancements**
 
 * Add Email/SMS notifications for donors
-* Improve UI with PyQt or web frontend
-* Role-based user access
-* Historical donation tracking and analytics
+* Improve UI/UX with Material UI or Tailwind CSS
+* Implement role-based access control
+* Integrate payment gateway for blood donation campaigns
+* Add donation history analytics and reports
 
-**Contributing:**
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-**License:**
-This project is licensed under the MIT License.
 
-Made by Palkiran Reddy
-GitHub: [https://github.com/palkiranreddyG](https://github.com/palkiranreddyG)
-
----
-
-Let me know if you want a PDF version or something formatted for display on a webpage or portfolio.
+If you want, I can also help you make a **professional portfolio PDF** or website snippet for this project! Would you like that?
